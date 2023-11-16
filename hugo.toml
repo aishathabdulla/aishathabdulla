@@ -1,0 +1,208 @@
+baseURL = "https://hugo-profile.netlify.app"
+languageCode = "en-us"
+title = "aishathabdulla"
+theme = "hugo-profile"
+Paginate = 3
+enableRobotsTXT = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[Menus.main]]
+identifier = "blog"
+name = "Blog"
+title = "Blog posts"
+url = "/blogs"
+weight = 1
+
+[params]
+title = "My Profile"
+ image = "/images/hero.svg"
+  [params.navbar]
+  align = "ms-auto"
+  brandName = "My Profile"
+  disableSearch = false
+
+    [params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableAchievements = false
+    disableContact = false
+
+  [params.hero]
+  enable = true
+  intro = "Hi, my name is"
+  title = "Aisha."
+  content = "A junior software developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+  image = "/images/hero.svg"
+
+    [params.hero.bottomImage]
+    enable = true
+
+    [params.hero.button]
+    enable = true
+    name = "Resume"
+    url = "https://drive.google.com/file/d/1tIVw9dcs0OJSN5wTrLlL_ecvW9PkFwb3/view?usp=sharing"
+    download = true
+    newPage = false
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://example.com"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-twitter"
+url = "https://example.com"
+
+  [params.about]
+  enable = true
+  title = "About Me"
+  image = "/images/me.png"
+  content = """
+I am a software developer with a passion for web development. I have a background in computer science.
+"""
+    [params.about.skills]
+    enable = true
+    title = "Here are a few technologies and programming languages I've been working with recently:"
+    items = [ "HTML", "CSS", "JavaScript", "React", "SQL", "C#", "Python", "Java"]
+
+  [params.experience]
+  enable = true
+
+    [[params.experience.items]]
+    job = "Software Engineer"
+    company = "Civil Service Commisson"
+    date = "Sep 2022 - Sep 2023"
+
+    [[params.experience.items]]
+    job = "Administrative Officer"
+    company = "Green Cube PVT LTD"
+    date = "July 2020 - Aug 2020"
+
+    [[params.experience.items]]
+    job = "IT Officer"
+    company = "Maldives Monetary Authority"
+    date = "Apr 2019 - Sept 2019"
+    content = """
+"""
+
+  [params.education]
+  enable = true
+  index = false
+
+    [[params.education.items]]
+    title = "Bachelor of Science in Computer Science"
+    date = "2019 - 2022"
+
+      [params.education.items.school]
+      name = "Queen Mary, University of London"
+      url = "https://www.qmul.ac.uk/"
+
+    [[params.education.items]]
+    title = "Edexcel A'Levels"
+    date = "2017 - 2018"
+
+      [params.education.items.school]
+      name = "Centre for Higher Seconday Education."
+
+
+  [params.projects]
+  enable = false
+
+    [[params.projects.items]]
+    title = "Hugo Profile"
+    content = "A highly customizable and mobile first Hugo template for personal portfolio and blog."
+    image = "/images/projects/profile.png"
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://hugo-profile.netlify.app"
+
+      [[params.projects.items.links]]
+      icon = "fa fa-envelope"
+      url = "mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/hugo-profile"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-twitter"
+      url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
+
+    [[params.projects.items]]
+    title = "Image Converter"
+    content = "A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django."
+    image = "/images/projects/converter.jpg"
+    badges = [ "Django", "Bootstrap" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://django-converter.herokuapp.com"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/converter"
+
+    [[params.projects.items]]
+    title = "Hugo Profile V2"
+    content = "A clean and simple Hugo template for personal portfolio and blog."
+    image = "/images/projects/profile2.jpg"
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
+
+      [params.projects.items.featured]
+      name = "Demo V2"
+      link = "https://hugo-profile-2.netlify.app"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/HugoProfileV2"
+
+  [params.contact]
+  enable = true
+  content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
+  email = "aishaaaa.abdulla@gmail.com"
+  btnName = "Mail me"
+
+[params.footer.recentPosts]
+path = "blogs"
+count = 3
+title = "Recent Posts"
+enable = false
+disableFeaturedImage = false
+
+[params.footer.socialNetworks]
+github = "https://github.com"
+linkedin = "https://linkedin.com"
+twitter = "https://twitter.com"
+instagram = "https://instagram.com"
+facebook = "https://facebook.com"
+
+  [params.listPages]
+  disableFeaturedImage = false
+
+[params.singlePages.readTime]
+enable = true
+content = "min read"
+
+[params.singlePages.scrollprogress]
+enable = true
+
+  [params.terms]
+  read = "Read"
+  toc = "Table Of Contents"
+  pageNotFound = "Page not found"
+  emailText = "Check out this site"
+
+  [params.datesFormat]
+  article = "Jan 2, 2006"
+  articleList = "Jan 2, 2006"
+  articleRecent = "Jan 2, 2006"
+
